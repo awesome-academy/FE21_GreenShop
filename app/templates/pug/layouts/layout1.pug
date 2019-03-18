@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+    head
+        block title
+            title Đây là trang demo project 1
+        meta(charset='utf-8')
+        block style
+            link(rel='stylesheet',href='./css/all.css')
+        link(rel='stylesheet',href='./css/bootstrap.css')
+        
+        meta(name='viewport',content='width=device-width,initial-scale=1.0')
+        meta(name='keywords',content='')
+        meta(name='description',content='')
+        script(src='./script/bootstrap.min.js')
+    body
+        include ../parts/header.pug
+        block content
+        include ../parts/footer.pug
+        
+        
