@@ -81,6 +81,10 @@ a {
 /*Add your css into here*/
 
 figure{
-    margin:0;
+    margin:0 !important;
     padding:0;
+    background-color: transparent !important;
+}
+hr {
+    margin: 0 !important;
 }
