@@ -13,36 +13,23 @@ block content
         section
             aside
                 include ../components/title.pug
-                mixin item-list(name)
-                    li= name  
                 +title('Danh mục sản phẩm')
                 ul
-                    +item-list('Cây chậu treo (10)')
-                    +item-list('Cây có hoa (5)')
-                    +item-list('Cây dây leo')
-                    +item-list('Cây để bàn')
-                    +item-list('Cây may mắn')
-                    +item-list('Cây trang trí')
-                    +item-list('Cây nội thất')
+                    - var list1 = ['Cây chậu treo (10)','Cây có hoa (5)','Cây dây leo','Cây để bàn','Cây may mắn','Cây trang trí','Cây nội thất']
+                        eachitem in list1
+                            li= item
                 +title('Tìm theo giá')
                 ul
-                    +item-list('200.000Đ - 400.000Đ')
-                    +item-list('400.000Đ - 600.000Đ')
-                    +item-list('600.000Đ - 800.000Đ')
-                    +item-list('800.000Đ - 1.000.000Đ')
-                    +item-list('1.000.000Đ - 1.200.000Đ')
+                    -var list2 = ['200.000Đ - 400.000Đ','400.000Đ - 600.000Đ','600.000Đ - 800.000Đ','800.000Đ - 1.000.000Đ','1.000.000Đ - 1.200.000Đ']
+                        each item in list2
+                            li= item
                 +title('Tìm theo màu')
                 .wrap-color
-                    mixin item-color(name)
-                        .item-color.d-flex.align-items-center
-                            span
-                            span.text-capitalize= name
-                    +item-color('xanh cây')
-                    +item-color('đỏ cam')
-                    +item-color('tím')
-                    +item-color('xanh trời')
-                    +item-color('vàng')
-                    +item-color('hồng')
+                    - let list3 = ['xanh cây','đỏ cam','tím','xanh trời','vàng','hồng']
+                        each item in list3
+                            .item-color.d-flex.align-items-center
+                                span
+                                span.text-capitalize= item
             article
                 .banner-list
                 .select-list.d-flex.justify-content-between.align-items-center
