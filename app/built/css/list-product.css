@@ -78,6 +78,9 @@ figure {
 hr {
   margin: 0 !important; }
 
+body {
+  background-color: #fbf9f9; }
+
 @media screen and (max-width: 576px) {
   .header--content {
     padding: 0 !important; }
@@ -583,6 +586,27 @@ article {
     display: grid;
     grid-gap: 33px;
     grid-template-columns: auto auto auto; }
+  article .grid-content .item-list-product {
+    margin-bottom: 21px;
+    border: 1px solid #e1e1e1; }
+    article .grid-content .item-list-product .item-content {
+      margin-left: 25px;
+      padding: 15px 0; }
+      article .grid-content .item-list-product .item-content span {
+        color: #d64146;
+        display: inline-block;
+        margin: 16px 0; }
+  article .grid-content .btn-action figure {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    text-align: center; }
+    article .grid-content .btn-action figure img {
+      margin-top: 50%;
+      transform: translateY(-50%); }
+  article .grid-content .btn-action figure:nth-child(2) {
+    margin: 0 9px !important; }
   article .pagination {
     margin: 80px 0 157px; }
     article .pagination li {

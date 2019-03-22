@@ -78,7 +78,26 @@ block content
                             +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')                    
                     .tab-pane.fade#nav-list(aria-labelledby="nav-list-tab")
                         .grid-content
-                            h1 danh sách dạng lưới
+                            include ../components/button.pug
+                            mixin item-list-product(src,title,content,price)
+                                .item-list-product.d-flex
+                                    img(src=src alt='hoa')
+                                    .item-content
+                                        h4= title
+                                        img(src='../images/star.png' alt='star')
+                                        p= content
+                                        span= price
+                                        .btn-action.d-flex.align-items-center
+                                            +button('mua ngay')
+                                            figure
+                                                img(src='../images/search.png' alt='search')
+                                            figure
+                                                img(src='../images/heart.png' alt='heart')    
+                            +item-list-product('../images/danhdu.png','Cây ngọc ngân','Cây ngọc ngân là một loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn dành tặng người ấy.Ngọc ngân(Valentine) không chỉ đẹp ở phiến lá xanh đám trắng','279.000đ')
+                            +item-list-product('../images/danhdu.png','Cây ngọc ngân','Cây ngọc ngân là một loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn dành tặng người ấy.Ngọc ngân(Valentine) không chỉ đẹp ở phiến lá xanh đám trắng','279.000đ')
+                            +item-list-product('../images/danhdu.png','Cây ngọc ngân','Cây ngọc ngân là một loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn dành tặng người ấy.Ngọc ngân(Valentine) không chỉ đẹp ở phiến lá xanh đám trắng','279.000đ')
+                            +item-list-product('../images/danhdu.png','Cây ngọc ngân','Cây ngọc ngân là một loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn dành tặng người ấy.Ngọc ngân(Valentine) không chỉ đẹp ở phiến lá xanh đám trắng','279.000đ')
+                            +item-list-product('../images/danhdu.png','Cây ngọc ngân','Cây ngọc ngân là một loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn dành tặng người ấy.Ngọc ngân(Valentine) không chỉ đẹp ở phiến lá xanh đám trắng','279.000đ')        
                 .pagination
                     ul.d-flex.ml-auto
                         li Trang trước 
