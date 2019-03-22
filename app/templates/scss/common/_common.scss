@@ -1,5 +1,12 @@
-@import './footer';
-@import './header';
+@import './variable';
 @import './reset';
 @import './responsive';
-@import './variable';
+@import './footer';
+@import './header';
+// import component
+@import '../components/button';
+@import '../components/product';
+@import '../components/title';
+
+
+
