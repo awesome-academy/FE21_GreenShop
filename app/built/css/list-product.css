@@ -382,7 +382,16 @@ button {
   transition: 0.3s; }
   button:hover {
     background-color: white;
-    color: #3fb871; }
+    color: #3fb871;
+    border: 1px solid #3fb871; }
+
+.not-color {
+  background-color: transparent;
+  color: #3fb871;
+  border: 1px solid #3fb871; }
+  .not-color:hover {
+    background-color: #3fb871;
+    color: white; }
 
 .product {
   border: 1px solid #e1e1e1; }
@@ -610,15 +619,28 @@ article {
   article .pagination {
     margin: 80px 0 157px; }
     article .pagination li {
+      width: 44px;
+      height: 44px;
       cursor: pointer;
-      padding: 16px;
       background-color: white;
       color: #898989;
       border: 1px solid #e1e1e1;
       margin-right: 9px;
-      text-align: center; }
-      article .pagination li:hover {
-        opacity: 0.5; }
-    article .pagination li.active {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    article .pagination li:first-child,
+    article .pagination li:last-child {
+      width: 108px;
+      height: 44px;
+      cursor: pointer;
+      background-color: white;
+      color: #898989;
+      border: 1px solid #e1e1e1;
+      margin-right: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    article .pagination li:nth-child(2) {
       background-color: #3fb871;
       color: white; }

@@ -170,19 +170,13 @@ article {
     .pagination {
         margin: 80px 0 157px;
         li {
-            cursor: pointer;
-            padding: 16px;
-            background-color: white;
-            color: $silverTextBold;
-            border: 1px solid $silverText;
-            margin-right: 9px;
-            text-align: center;
-            &:hover {
-                opacity: 0.5;
-            }
-
+            @include quantity-frame(44px,44px);
         }
-        li.active {
+        li:first-child,
+        li:last-child {
+            @include quantity-frame(108px,44px);
+        }
+        li:nth-child(2) {
             background-color: $green;
             color: white;
         }

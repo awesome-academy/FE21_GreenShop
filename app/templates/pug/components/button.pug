@@ -1,2 +1,5 @@
-mixin button(name)
-    button.text-uppercase= name
+mixin button(name,color)
+    if color
+        button.text-uppercase(class=color)= name
+    else    
+        button.text-uppercase= name
