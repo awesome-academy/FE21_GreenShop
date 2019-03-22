@@ -1,110 +1,89 @@
 extends ../layouts/layout1.pug
 
-block title 
-    title Trang chủ | Home
+block title
+    title Danh sách sản phẩm
+
 block style
-    link(rel="stylesheet" type="text/css",href='./css/all.css') 
+    link(rel="stylesheet" type="text/css",href='./css/list-product.css') 
+
 block content
     main
-        article
-            #carouselExampleIndicators.carousel.slide(data-ride='carousel')
-                ol.carousel-indicators
-                    li(data-target='#carouselExampleIndicators' data-slide-to='0' ).active
-                    li(data-target='#carouselExampleIndicators' data-slide-to='1' )
-                    li(data-target='#carouselExampleIndicators' data-slide-to='2' )
-                .carousel-inner
-                    .carousel-item.active
-                        .slide-banner
-                            img(src='./images/gs-shop.png' alt='gs shop').d-none.d-sm-inline-block
-                            p.font-italic.text-white.d-none.d-sm-block (Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)
-                    .carousel-item
-                        .slide-banner
-                            img(src='./images/gs-shop.png' alt='gs shop').d-none.d-sm-inline-block
-                            p.font-italic.text-white.d-none.d-sm-block (Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)
-                    .carousel-item
-                        .slide-banner
-                            img(src='./images/gs-shop.png' alt='gs shop').d-none.d-sm-inline-block
-                            p.font-italic.text-white.d-none.d-sm-block (Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)
+        include ../components/path.pug
+        +path('Danh sách sản phẩm')
         section
-            include ../components/product.pug
-            mixin title(name,check= false)
-                .title.d-flex.justify-content-between.align-items-center
-                    span.text-capitalize= name
-                    if check
-                        .arrow.d-flex
-                            .arrow-left
-                            .arrow-right
-            //- section 1
-            .section-1
-                .product--highligh
-                    +title('sản phẩm nổi bật')
-                    .product--highligh-content
-                        .child
-                            +product('./images/product-big.png','Cây Chân Chim','./images/star.png','250.000đ','260.000đ','new',false)
-                            .wrap-child
-                                +product('./images/cota.png','Cây Cọ Ta','./images/star.png','150.000đ','250.000đ')
-                                +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
-                        .child
-                            +product('./images/product-big.png','Cây Đa Búp Đỏ','./images/star.png','1.000.000đ','250.000đ','-50%')
-                            .wrap-child
-                                +product('./images/dalam.png','Cây Dạ Lam','./images/star.png','500.000đ','250.000đ','-50%')
-                                +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','850.000đ','250.000đ','new')
-            //- section 2
-            .section-2
-                .product--buy-sale
-                    +title('sản phẩm mua nhiều')
-                    +title('sản phẩm khuyến mại',true)
-                    .product--buy-content
-                        mixin product-buy(src1,title,src2,price)
-                            .item-product.d-flex
-                                img(src=src1,alt='cây')
-                                .item-info
-                                    span= title
-                                    img(src=src2 alt='star')
-                                    p= price
-                        +product-buy('./images/dalam.png','Cây Dạ Lam','./images/star.png','250.000đ')
-                        +product-buy('./images/cota.png','Cây Cọ Ta','./images/star.png','260.000đ')
-                        +product-buy('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','270.000đ')
-                        +product-buy('./images/danhdu.png','cây chân chim','./images/star.png','280.000đ')
-                        +product-buy('./images/cota.png','Cây Đa Búp Đỏ','./images/star.png','290.000đ')
-                        +product-buy('./images/dalam.png','Cây Danh Dự','./images/star.png','210.000đ')            
-                    //- .product--sale
-                    
-                    .product--sale-content
-                        +product('./images/cota.png','Cây Cọ Ta','./images/star.png','153.000đ','250.000đ','-25%')
-                        +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','120.000đ','250.000đ','-10%')
-                        +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','190.000đ','250.000đ')
-                        +product('./images/dalam.png','Cây Dạ Lam','./images/star.png','120.000đ','250.000đ')
-                        +product('./images/duanho.png','Cây Danh Dự','./images/star.png','178.000đ','250.000đ')
-                        +product('./images/cota.png','Cây Cọ Ta','./images/star.png','151.000đ','250.000đ')
-            //- section 3
-            .section-3
-                .wrap-dalat
-                    img(src='./images/dalat.png' alt='sương rồng đà lạt')
-            //- section 4
-            .section-4
-                +title('sản phẩm mới',true)
-                .product-news
-                    +product('./images/cota.png','Cây Cọ Ta','./images/star.png','153.000đ','250.000đ','new')
-                    +product('./images/dalam.png','Cây Dạ Lam','./images/star.png','123.000đ','250.000đ')
-                    +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','157.000đ','250.000đ')
-                    +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','110.000đ','250.000đ')
-                    +product('./images/dalam.png','Cây Dạ Lam','./images/star.png','170.000đ','250.000đ')
-                    +product('./images/cota.png','Cây Cọ Ta','./images/star.png','193.000đ','250.000đ')
-                    +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','340.000đ','250.000đ')
-                    +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','103.000đ','250.000đ')
-            //- section 5
-            .section-5
-                +title('tin tức')                
-                mixin new(src,date,title,content)
-                    .new
-                        img(src=src alt='ảnh').w-100
-                        i= date
-                        a(href='#')
-                            h4= title
-                        p= content
-                        span.font-italic Đọc tiếp    
-                .wrap-new
-                    +new('./images/new3.png','Thứ 7, ngày 31, tháng 12, năm 2019','15 thiết kế phòng ngủ vạn người mê','Cùng Sài Gòn Hoa tìm hiểu vài xu hướng thiết kế  sân vườn được ưa chuộng hiện nay nhé ! kết hợp hàng rào')
-                    +new('./images/new2.png','Thứ 2, ngày 31, tháng 3, năm 2014','15 thiết kế phòng ngủ vạn người mê','Cùng Sài Gòn Hoa tìm hiểu vài xu hướng thiết kế  sân vườn được ưa chuộng hiện nay nhé ! kết hợp hàng rào') 
-                    +new('./images/new4.png','Thứ 5, ngày 31, tháng 5, năm 2012','15 thiết kế phòng ngủ vạn người mê','Cùng Sài Gòn Hoa tìm hiểu vài xu hướng thiết kế  sân vườn được ưa chuộng hiện nay nhé ! kết hợp hàng rào')   
+            aside
+                include ../components/title.pug
+                mixin item-list(name)
+                    li= name  
+                +title('Danh mục sản phẩm')
+                ul
+                    +item-list('Cây chậu treo (10)')
+                    +item-list('Cây có hoa (5)')
+                    +item-list('Cây dây leo')
+                    +item-list('Cây để bàn')
+                    +item-list('Cây may mắn')
+                    +item-list('Cây trang trí')
+                    +item-list('Cây nội thất')
+                +title('Tìm theo giá')
+                ul
+                    +item-list('200.000Đ - 400.000Đ')
+                    +item-list('400.000Đ - 600.000Đ')
+                    +item-list('600.000Đ - 800.000Đ')
+                    +item-list('800.000Đ - 1.000.000Đ')
+                    +item-list('1.000.000Đ - 1.200.000Đ')
+                +title('Tìm theo màu')
+                .wrap-color
+                    mixin item-color(name)
+                        .item-color.d-flex.align-items-center
+                            span
+                            span.text-capitalize= name
+                    +item-color('xanh cây')
+                    +item-color('đỏ cam')
+                    +item-color('tím')
+                    +item-color('xanh trời')
+                    +item-color('vàng')
+                    +item-color('hồng')
+            article
+                .banner-list
+                .select-list.d-flex.justify-content-between.align-items-center
+                    .nav.nav-tabs
+                        a.nav-item.nav-link.active#nav-grid-tab(href='#nav-grid' data-toggle='tab' onclick='return false')    
+                            img(src='../images/list2.png' alt='icon-list' )
+                        a.nav-item.nav-link#nav-list-tab(href='#nav-list' data-toggle='tab' onclick='return false')
+                            img(src='../images/list1.png' alt='icon-list')    
+                    .option-select.d-flex
+                        .select-item
+                            span Sắp xếp theo
+                            select
+                                option Tên sản phẩm
+                        .select-item
+                            span Show
+                            select
+                                option 15        
+                .tab-content#nav-tabContent
+                    .tab-pane.fade.show.active#nav-grid(aria-labelledby="nav-grid-tab")
+                        .list-content
+                            include ../components/product.pug
+                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/caychanchim.png','Cây Chân Chim','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/cota.png','Cây Cọ Ta','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/caychanchim.png','Cây Chân Chim','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/cota.png','Cây Cọ Ta','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/dalam.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/caychanchim.png','Cây Chân Chim','./images/star.png','375.000đ','250.000đ')
+                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')                    
+                    .tab-pane.fade#nav-list(aria-labelledby="nav-list-tab")
+                        .grid-content
+                            h1 danh sách dạng lưới
+                .pagination
+                    ul.d-flex.ml-auto
+                        li Trang trước 
+                        li.active 1
+                        li 2
+                        li 3 
+                        li 4
+                        li Trang sau

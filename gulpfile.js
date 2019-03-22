@@ -20,7 +20,7 @@ gulp.task('pug',function() {
 });
 
 gulp.task('sass',function() {
-  return gulp.src('./app/templates/scss/*.scss')
+  return gulp.src('./app/templates/scss/pages/*.scss')
     .pipe(sass().on('error', sass.logError))  
     .pipe(gulp.dest('./app/built/css/'))
     .pipe(browserSync.stream());
@@ -37,7 +37,7 @@ gulp.task('serve', ['pug','sass','js'], function() {
 
   browserSync.init({
       server: {
-        baseDir: "./app/built"
+        baseDir: "./app/built/"
       },
       /*
       *  server sẽ run file trong pages,nhưng nếu các file khác không nàm trong pages nó sẽ không nhận các file đó
