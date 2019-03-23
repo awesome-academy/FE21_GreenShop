@@ -505,6 +505,17 @@ button {
   .path span:nth-child(2) {
     color: #3fb871; }
 
+.input-child {
+  margin-top: 32px; }
+  .input-child .title-input label {
+    color: #898989; }
+  .input-child .title-input small {
+    color: #d64146; }
+  .input-child input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e1e1e1; }
+
 main {
   padding: 0 150px; }
   main .new aside {
@@ -559,6 +570,42 @@ section {
     */ }
   section .section-new {
     margin-bottom: 54px; }
+    section .section-new h4 {
+      cursor: pointer; }
+    section .section-new .comment {
+      margin-top: 81px; }
+      section .section-new .comment--title {
+        text-transform: uppercase;
+        font-weight: bold; }
+      section .section-new .comment--content > .comment--content-item {
+        margin-top: 29px;
+        border-bottom: 1px solid #e1e1e1; }
+    section .section-new .comment--content-item {
+      display: flex; }
+      section .section-new .comment--content-item .answer {
+        padding-top: 29px;
+        border-top: 1px solid #e1e1e1;
+        margin-top: 29px; }
+      section .section-new .comment--content-item img {
+        width: 57px;
+        height: 57px;
+        border-radius: 50%; }
+    section .section-new .info-comment {
+      width: calc(100% - 61px);
+      margin-left: 24px;
+      padding-bottom: 29px; }
+      section .section-new .info-comment i {
+        color: #898989; }
+      section .section-new .info-comment p {
+        margin: 13px 0; }
+      section .section-new .info-comment .name {
+        display: flex;
+        justify-content: space-between; }
+        section .section-new .info-comment .name span {
+          text-decoration: underline;
+          font-style: italic; }
+    section .section-new > img {
+      width: 100%; }
     section .section-new .date-new {
       margin: 14px 0; }
       section .section-new .date-new img {
@@ -570,6 +617,23 @@ section {
     section .section-new p {
       margin-top: 34px;
       color: #898989; }
+    section .section-new .write--comment .input-text {
+      display: flex;
+      justify-content: space-between; }
+      section .section-new .write--comment .input-text input {
+        height: 32px;
+        padding-left: 18px;
+        border: 1px solid #e1e1e1; }
+    section .section-new .write--comment .input-textarea textarea {
+      height: 108px;
+      width: 100%;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      padding: 13px 16px;
+      border: 1px solid #e1e1e1; }
+    section .section-new .write--comment button {
+      display: flex;
+      margin-left: auto; }
   section .pagination-new li {
     width: 44px;
     height: 44px;

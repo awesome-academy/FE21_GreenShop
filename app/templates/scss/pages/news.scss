@@ -63,6 +63,57 @@ section {
     * section new style 
     */
     .section-new {
+        h4 {
+            cursor: pointer;
+        }
+        .comment {
+            margin-top: 81px;
+            &--title {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            &--content {
+                &>.comment--content-item {
+                    margin-top: 29px;
+                    border-bottom: 1px solid $silverText;
+                }
+            }
+        }
+        .comment--content-item {
+            display: flex;
+            .answer {
+                padding-top: 29px;
+                border-top: 1px solid $silverText;
+                margin-top: 29px;
+            }
+            img {
+                width: 57px;
+                height: 57px;
+                border-radius: 50%;
+            }
+        }
+        .info-comment {
+            width: calc(100% - 61px);
+            i {
+                color: $silverTextBold;
+            }
+            p {
+                margin: 13px 0;
+            }
+            .name {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    text-decoration: underline;
+                    font-style: italic;
+                }
+            }
+            margin-left: 24px;
+            padding-bottom: 29px;
+        }    
+        &>img {
+            width: 100%;
+        }
         margin-bottom: 54px;
         .date-new {
             margin: 14px 0;
@@ -78,6 +129,32 @@ section {
         p {
             margin-top: 34px;
             color: $silverTextBold;
+        }
+        .write--comment {
+            .input-text {
+                display: flex;
+                justify-content: space-between;
+                input {
+                    height: 32px;
+                    padding-left: 18px;
+                    border: 1px solid $silverText;
+                }
+                
+            }
+            .input-textarea {
+                textarea {
+                    height: 108px;
+                    width: 100%;
+                    margin-top: 16px;
+                    margin-bottom: 20px;
+                    padding: 13px 16px;
+                    border: 1px solid $silverText;
+                }
+            }
+            button {
+                display: flex;
+                margin-left: auto;
+            }
         }
     }
     /*

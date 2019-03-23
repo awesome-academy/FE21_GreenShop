@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Liên hệ</title>
+    <title>Đăng ký</title>
     <meta charset="utf-8">
     <script type="text/javascript" src="./script/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+    <link rel="stylesheet" type="text/css" href="./css/signup.css">
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="./vendor/awesome/css/all.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
@@ -72,44 +72,70 @@
       </ul>
     </nav>
     <main>
-            <div class="path"><span>Home / </span><span>Liên hệ</span></div>
-      <div class="map--contact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.466932100143!2d108.20769987809705!3d16.02127162629135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421989ed6118eb%3A0xe5c0365c3071ef6b!2zxJDhu5lpIEPhuqVuLCBLaHXDqiBUcnVuZywgQ-G6qW0gTOG7hywgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1553325021464" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="path"><span>Home / </span><span>Đăng ký</span></div>
+      <div class="info--customer">
+        <div class="info--customer-title">
+          <h4 class="text-uppercase">thông tin các nhân</h4>
+        </div>
+        <div class="info--customer-content d-flex">
+          <div class="left">
+                  <div class="input-child">
+                    <div class="title-input">   
+                      <label>Họ và tên</label><small> * :</small>
+                    </div>
+                    <input type="text">
+                  </div>
+                  <div class="input-child">
+                    <div class="title-input">   
+                      <label>Số ĐT</label><small> * :</small>
+                    </div>
+                    <input type="text">
+                  </div>
+            <input type="checkbox" id="signup-email">
+            <label for="signup-email">Đăng ký nhận thông tin qua email</label>
+          </div>
+          <div class="right">
+                  <div class="input-child">
+                    <div class="title-input">   
+                      <label>Địa chỉ email</label><small> * :</small>
+                    </div>
+                    <input type="text">
+                  </div>
+                  <div class="input-child">
+                    <div class="title-input">   
+                      <label>Website của bạn</label><small> * :</small>
+                    </div>
+                    <input type="text">
+                  </div>
+          </div>
+        </div>
       </div>
-      <div class="content--contact">
-        <div class="content--contact-input">
-          <h4 class="text-uppercase">thông tin liên hệ</h4>
-                    <div class="input-child">
-                      <div class="title-input">   
-                        <label>Họ và tên</label><small> * :</small>
-                      </div>
-                      <input type="text">
-                    </div>
-                    <div class="input-child">
-                      <div class="title-input">   
-                        <label>Địa chỉ email</label><small> * :</small>
-                      </div>
-                      <input type="text">
-                    </div>
-                    <div class="input-child">
-                      <div class="title-input">   
-                        <label>Số ĐT</label><small> * :</small>
-                      </div>
-                      <input type="text">
-                    </div>
-                    <div class="input-child">
-                      <div class="title-input">   
-                        <label>Bình luận</label><small> * :</small>
-                      </div>
-                      <input type="text">
-                    </div>
+      <div class="info--customer">
+        <div class="info--customer-title">
+          <h4 class="text-uppercase">thông tin tài khoản</h4>
         </div>
-        <div class="content--contact-info">
-          <figure class="position-relative"><img src="../images/gs.png" alt="green shop"><span class="position-absolute">Món quà từ thiên nhiên</span></figure>
-          <p>DKT được thành lập với niềm đam mê và khát vọng thành công trong lĩnh vực Thương mại điện tử.Chúng tôi đã và đang khẳng định được vị trí hàng đầu bằng những sản phẩm</p>
-          <div class="phone-contact"><img src="../images/phone.png" alt="điện thoại"><span>Điện thoại : (84 -4) 66.558.868 </span></div>
-          <div class="email-contact"><img src="../images/email.png" alt="mail"><span>Email : info@dkt.com.vn</span></div>
+        <div class="info--customer-content d-flex">
+          <div class="left"> 
+                  <div class="input-child">
+                    <div class="title-input">   
+                      <label>Mật khẩu</label><small> * :</small>
+                    </div>
+                    <input type="text">
+                  </div>
+          </div>
+          <div class="right">   
+                  <div class="input-child">
+                    <div class="title-input">   
+                      <label>Nhập lại mật khẩu</label><small> * :</small>
+                    </div>
+                    <input type="text">
+                  </div>
+          </div>
         </div>
+      </div>
+      <div class="btn-signup">
+                <button class="text-uppercase not-color">quay lại</button>
+                <button class="text-uppercase">đăng ký</button>
       </div>
     </main>
     <footer>

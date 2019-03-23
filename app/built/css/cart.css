@@ -505,6 +505,17 @@ button {
   .path span:nth-child(2) {
     color: #3fb871; }
 
+.input-child {
+  margin-top: 32px; }
+  .input-child .title-input label {
+    color: #898989; }
+  .input-child .title-input small {
+    color: #d64146; }
+  .input-child input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e1e1e1; }
+
 main {
   padding: 0 150px;
   margin-bottom: 161px;
