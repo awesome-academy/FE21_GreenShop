@@ -138,3 +138,100 @@
     }
     
 }
+
+// 768px
+@media screen and (max-width: 768px ) {
+    main {
+        section {
+            padding: 0 $paddingMobile !important;
+        }
+    }
+    
+    
+    #cart,
+    #detail-product,
+    #new,
+    #list-product {
+        padding: 0 $paddingMobile !important;
+    }
+    article {
+        .list-content {
+            grid-template-columns: auto auto !important; 
+        }
+    }
+    header {
+        .header--top {
+            padding: 0 $paddingMobile !important;
+        }
+        .header--content {
+            padding: 0  !important;
+            &-search {
+                display: none !important;
+            }
+            &-name {
+                width: 100%;
+                figure {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        padding : 0 $paddingMobile !important;
+        .icon-menu {
+            display: none;
+        }
+    }
+    .slide-banner {
+        p,
+        img {
+            display: none !important;
+        }
+
+    }
+    .write--comment {
+        .input-text {
+            display: block !important;
+            input {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .product--buy-sale {
+        grid-template-columns: auto !important;
+        .title:first-child {
+            order: 1;
+        }
+        .product--buy-content {
+            order: 3;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 0 !important;
+            .item-product {
+                padding: 0;
+                width: 32%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .section-4 {
+        .product-news {
+            grid-template-columns: auto auto auto  !important;
+        }
+    }
+    .content--contact {
+        padding: 0 $paddingMobile !important;
+    }
+    footer {
+        .footer--top,
+        .footer--middle,
+        .footer--bottom {
+            padding: 0 $paddingMobile !important;
+        }
+    }
+}

@@ -3,8 +3,11 @@
 /*
 * style for page list product
 */
-main {
+#list-product {
     padding: 0 $paddingMain;
+}
+main {
+    
     section {
         display: flex;
         aside {
@@ -98,7 +101,7 @@ article {
     margin-top: 59px;
     .banner-list {
         height: 159px;
-        background: url(../images/new4.png) no-repeat 50% 53%;
+        background: url('../../../images/new4.png') no-repeat 50% 53%;
         background-size: cover;
     }
     .select-list {

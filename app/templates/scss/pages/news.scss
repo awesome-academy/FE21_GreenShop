@@ -1,8 +1,11 @@
 @import '../common/common';
 
 // style for news
-main {
+#new {
     padding: 0 $paddingMain;
+}
+main {
+    
     .new {
         aside {
             width: 266px;
@@ -131,6 +134,10 @@ section {
             color: $silverTextBold;
         }
         .write--comment {
+            &-title {
+                margin: 39px 0 31px;
+                font-weight: bold;
+            }
             .input-text {
                 display: flex;
                 justify-content: space-between;

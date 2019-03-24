@@ -4,10 +4,10 @@ block title
     title Danh sách sản phẩm
 
 block style
-    link(rel="stylesheet" type="text/css",href='./css/list-product.css') 
+    link(rel="stylesheet" type="text/css",href='../css/pages/list-product.css') 
 
 block content
-    main
+    main#list-product
         include ../components/path.pug
         +path('Danh sách sản phẩm')
         section
@@ -51,18 +51,18 @@ block content
                     .tab-pane.fade.show.active#nav-grid(aria-labelledby="nav-grid-tab")
                         .list-content
                             include ../components/product.pug
-                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/caychanchim.png','Cây Chân Chim','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/cota.png','Cây Cọ Ta','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/danhdu.png','Cây Danh Dự','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/caychanchim.png','Cây Chân Chim','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/cota.png','Cây Cọ Ta','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/dalam.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/caychanchim.png','Cây Chân Chim','./images/star.png','375.000đ','250.000đ')
-                            +product('./images/duanho.png','Cây Dứa Nhỏ','./images/star.png','375.000đ','250.000đ')                    
+                            +product('../images/duanho.png','Cây Dứa Nhỏ','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/caychanchim.png','Cây Chân Chim','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/danhdu.png','Cây Danh Dự','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/cota.png','Cây Cọ Ta','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/danhdu.png','Cây Danh Dự','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/duanho.png','Cây Dứa Nhỏ','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/caychanchim.png','Cây Chân Chim','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/cota.png','Cây Cọ Ta','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/duanho.png','Cây Dứa Nhỏ','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/dalam.png','Cây Dứa Nhỏ','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/caychanchim.png','Cây Chân Chim','../images/star.png','375.000đ','250.000đ')
+                            +product('../images/duanho.png','Cây Dứa Nhỏ','../images/star.png','375.000đ','250.000đ')                    
                     .tab-pane.fade#nav-list(aria-labelledby="nav-list-tab")
                         .grid-content
                             include ../components/button.pug

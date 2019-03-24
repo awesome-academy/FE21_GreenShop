@@ -1,8 +1,11 @@
 @import '../common/common';
 
 // style for detail product
-main {
+#detail-product {
     padding: 0 $paddingMain;
+}
+main {
+    
     .detail--info {
         margin-top: 43px;
         &-content {

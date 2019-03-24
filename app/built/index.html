@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chi tiết sản phẩm</title>
+    <title>Trang chủ | Home</title>
     <meta charset="utf-8">
     <script type="text/javascript" src="./script/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/detail-product.css">
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <script src="./script/popup.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="./vendor/awesome/css/all.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
@@ -26,7 +27,7 @@
               <figure><img src="images/v.png" alt="v"></figure></a>
           </div>
         </div>
-        <div class="header--top-right float-right"><a class="d-inline-block" href="#"><img src="./images/signin.png" alt="signin"><span>Đăng nhập</span></a><a class="d-inline-block" href="#"><img src="./images/signup.png" alt="signup"><span>Đăng kí</span></a></div>
+        <div class="header--top-right float-right"><a class="d-inline-block" href="./pages/signin.html"><img src="./images/signin.png" alt="signin"><span>Đăng nhập</span></a><a class="d-inline-block" href="./pages/signup.html"><img src="./images/signup.png" alt="signup"><span>Đăng kí</span></a></div>
       </div>
       <div class="header--content d-flex">
         <div class="header-mobile d-block d-sm-none"><img src="./images/GreenShop1.png" alt="gs-mobile"></div>
@@ -39,7 +40,7 @@
             <div class="search--input position-relative">
               <input class="w-100 border-0 d-block px-4" type="text" placeholder="Tìm kiếm..."><span></span><img class="position-absolute" src="./images/search.png" alt="Search">
             </div>
-          </div><img src="./images/cart.png" alt="giỏ hàng"><span>0 sản phẩm            </span>
+          </div><a href="./pages/cart.html"><img src="./images/cart.png" alt="giỏ hàng"></a><span>0 sản phẩm            </span>
         </div>
       </div>
     </header>
@@ -55,130 +56,374 @@
         </div><img class="d-inline-block" src="./images/cart-white.png" alt="cart-white">
       </div>
       <ul class="d-none d-sm-flex mb-0">
-        <li class="active"><a href="">trang chủ</a></li>
+        <li class="active"><a href="index.html">trang chủ</a></li>
         <li><a href="">giới thiệu</a></li>
-        <li> <a href="">sảm phẩm
+        <li> <a href="./pages/list-product.html">sảm phẩm
             <ul class="d-none">
-              <li>sản phẩm 1</li>
-              <li>sản phẩm 2</li>
+              <li> <a href="./pages/detail-product.html">Chi tiết sản phẩm</a></li>
             </ul></a></li>
         <li> <a href="">sản phẩm mới
             <ul class="d-none">
               <li>sản phẩm mới 1</li>
               <li>sản phẩm mới 2</li>
             </ul></a></li>
-        <li><a href="">tin tức</a></li>
-        <li><a href="">liên hệ                 </a></li>
+        <li><a href="./pages/news.html">tin tức</a></li>
+        <li><a href="./pages/contact.html">liên hệ                 </a></li>
       </ul>
     </nav>
-    <main> 
-            <div class="path"><span>Home / </span><span>Cây  dạ lam</span></div>
-      <div class="detail--info d-flex">
-        <div class="galary"><img src="../images/danhdu.png" alt="danh dự">
-          <div class="wrap--galary-item d-flex"><img src="../images/danhdu.png" alt="danh dự"><img src="../images/dalam.png" alt="dạ lam"><img src="../images/caychanchim.png" alt="chân chim"><img src="../images/cota.png" alt="cota"><img src="../images/spx2-14.png" alt="cota"></div>
-        </div>
-        <div class="detail--info-content">       
-          <h4>Cây dạ lam</h4><img src="../images/star.png" alt="star"><br><span>4.099.000 đ</span>
-          <label>4.099.000 đ</label>
-          <p>Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.</p>
-          <div class="quantity d-flex align-items-center"><span>Số lượng</span>
-                        <li>-</li>
-                        <li>1</li>
-                        <li>+</li>
-          </div>
-          <div class="wrap-btn d-flex">
-                        <button class="text-uppercase">mua ngay</button>
-            <figure><img src="../images/search.png" alt="search"></figure>
-            <figure><img src="../images/heart.png" alt="heart"></figure>
-          </div>
-          <div class="social-product d-flex"><img src="../images/like.png" alt="like">
-            <div class="number-img">0</div><img src="../images/twitter1.png" alt="twitter1"><img src="../images/google.png" alt="google">
-            <div class="number-img">0</div><img src="../images/share.png" alt="share">
-          </div>
-        </div>
-      </div>
-      <div class="detail-info2">
-        <div class="nav nav-tabs"><a class="nav-item nav-link active" id="nav-grid-tab" href="#nav-detail1" data-toggle="tab" onclick="return false">Thông tin sản phẩm    </a><a class="nav-item nav-link" id="nav-list-tab" href="#nav-detail2" data-toggle="tab" onclick="return false">Khách hàng đánh giá</a><a class="nav-item nav-link" id="nav-list-tab" href="#nav-detail3" data-toggle="tab" onclick="return false">Thẻ tag</a></div>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-detail1" aria-labelledby="nav-grid-tab">
-            <p>
-                Tên phổ thông: Dạ lam, Huỳnh tinh cảnh, Dong vằn.</p>
-            <p>
-               Tên khoa học: Calathea zebrina</p>
-            <p>
-                Họ thực vật: Marantaceae (Củ dong).</p>
-            <p>Chiều cao: 0,8-1,2m</p>
-            <p>Cây dạ lam có nguồn gốc từ Brazil, được du nhập và phân bố rộng khắp ở Việt Nam.</p>
-            <p>
-              Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.
-              Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.
-               Đây là loại cây có dáng đẹp, màu lá mướt mát, tươi khỏe, cây rất phù hợp trồng chậu trang trí nội thất-văn phòng.
-               Ngoài ra, cây còn có đặc điểm lọc khí, làm xanh mát môi trường, giúp điều hòa không khí, đặc biệt tốt cho những môi trường thường xuyên sử dụng các loại máy móc tảng nhiệt. Có thể bày cây ở hành lang hay ở giữa sảnh, đặt ở cạnh bàn làm việc hoặc trang trí các góc phòng có diện tích trung bình
-            </p>
-          </div>
-          <div class="tab-pane fade" id="nav-detail2" aria-labelledby="nav-list-tab">   
-            <p>
-                Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.</p>
-            <p>
-                Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.</p>
-          </div>
-          <div class="tab-pane fade show active" id="nav-detail3" aria-labelledby="nav-grid-tab">
-            <p>
-                 Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.</p>
-            <p>
-                Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.</p>
-          </div>
-        </div>
-      </div>
-            <div class="title d-flex justify-content-between align-items-center"><span class="text-capitalize">Sản phẩm cùng loại</span>
-              <div class="arrow d-flex">
-                <div class="arrow-left"></div>
-                <div class="arrow-right"></div>
+    <main>
+      <article>
+        <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slide-banner"><img class="d-none d-sm-inline-block" src="./images/gs-shop.png" alt="gs shop">
+                <p class="font-italic text-white d-none d-sm-block">(Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)</p>
               </div>
             </div>
-      <div class="product--relate">
-                <div class="product position-relative">
-                  <figure><img src="../images/cota.png" alt="hoa"></figure>
-                  <div class="content">
-                    <p>Cây cọ Nhật</p><img src="../images/star.png" alt="star">
-                    <div class="price">
-                      <div class="price--new">250.000 đ</div>
-                      <div class="price--old">250.000 đ</div>
+            <div class="carousel-item">
+              <div class="slide-banner"><img class="d-none d-sm-inline-block" src="./images/gs-shop.png" alt="gs shop">
+                <p class="font-italic text-white d-none d-sm-block">(Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slide-banner"><img class="d-none d-sm-inline-block" src="./images/gs-shop.png" alt="gs shop">
+                <p class="font-italic text-white d-none d-sm-block">(Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section>
+        <div class="section-1">
+          <div class="product--highligh">
+                    <div class="title d-flex justify-content-between align-items-center"><span class="text-capitalize">sản phẩm nổi bật</span>
+                    </div>
+            <div class="product--highligh-content">
+              <div class="child">
+                        <div class="product position-relative">
+                          <figure class="position-relative"><img src="./images/product-big.png" alt="hoa">
+                            <div class="on-img position-absolute d-flex justify-content-center align-items-center">
+                                      <button class="text-uppercase">mua ngay</button>
+                              <div class="search-product d-flex justify-content-center align-items-center"><img src="./images/search.png" alt="search product"></div>
+                            </div>
+                          </figure>
+                          <div class="content">
+                            <p>Cây Chân Chim</p><img src="./images/star.png" alt="star">
+                            <div class="price">
+                              <div class="price--new">250.000đ</div>
+                              <div class="price--old">260.000đ</div>
+                            </div>
+                          </div>
+                          <div class="sales">new</div>
+                        </div>
+                <div class="wrap-child">
+                          <div class="product position-relative">
+                            <figure><img src="./images/cota.png" alt="hoa"></figure>
+                            <div class="content">
+                              <p>Cây Cọ Ta</p><img src="./images/star.png" alt="star">
+                              <div class="price">
+                                <div class="price--new">150.000đ</div>
+                                <div class="price--old">250.000đ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product position-relative">
+                            <figure><img src="./images/duanho.png" alt="hoa"></figure>
+                            <div class="content">
+                              <p>Cây Dứa Nhỏ</p><img src="./images/star.png" alt="star">
+                              <div class="price">
+                                <div class="price--new">375.000đ</div>
+                                <div class="price--old">250.000đ</div>
+                              </div>
+                            </div>
+                          </div>
+                </div>
+              </div>
+              <div class="child">
+                        <div class="product position-relative">
+                          <figure><img src="./images/product-big.png" alt="hoa"></figure>
+                          <div class="content">
+                            <p>Cây Đa Búp Đỏ</p><img src="./images/star.png" alt="star">
+                            <div class="price">
+                              <div class="price--new">1.000.000đ</div>
+                              <div class="price--old">250.000đ</div>
+                            </div>
+                          </div>
+                          <div class="sales bg-percent">-50%</div>
+                        </div>
+                <div class="wrap-child">
+                          <div class="product position-relative">
+                            <figure><img src="./images/dalam.png" alt="hoa"></figure>
+                            <div class="content">
+                              <p>Cây Dạ Lam</p><img src="./images/star.png" alt="star">
+                              <div class="price">
+                                <div class="price--new">500.000đ</div>
+                                <div class="price--old">250.000đ</div>
+                              </div>
+                            </div>
+                            <div class="sales bg-percent">-50%</div>
+                          </div>
+                          <div class="product position-relative">
+                            <figure><img src="./images/danhdu.png" alt="hoa"></figure>
+                            <div class="content">
+                              <p>Cây Danh Dự</p><img src="./images/star.png" alt="star">
+                              <div class="price">
+                                <div class="price--new">850.000đ</div>
+                                <div class="price--old">250.000đ</div>
+                              </div>
+                            </div>
+                            <div class="sales">new</div>
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="product--buy-sale">
+                    <div class="title d-flex justify-content-between align-items-center"><span class="text-capitalize">sản phẩm mua nhiều</span>
+                    </div>
+                    <div class="title d-flex justify-content-between align-items-center"><span class="text-capitalize">sản phẩm khuyến mại</span>
+                      <div class="arrow d-flex">
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                      </div>
+                    </div>
+            <div class="product--buy-content">
+                            <div class="item-product d-flex"><img src="./images/dalam.png" alt="cây">
+                              <div class="item-info"><span>Cây Dạ Lam</span><img src="./images/star.png" alt="star">
+                                <p>250.000đ</p>
+                              </div>
+                            </div>
+                            <div class="item-product d-flex"><img src="./images/cota.png" alt="cây">
+                              <div class="item-info"><span>Cây Cọ Ta</span><img src="./images/star.png" alt="star">
+                                <p>260.000đ</p>
+                              </div>
+                            </div>
+                            <div class="item-product d-flex"><img src="./images/duanho.png" alt="cây">
+                              <div class="item-info"><span>Cây Dứa Nhỏ</span><img src="./images/star.png" alt="star">
+                                <p>270.000đ</p>
+                              </div>
+                            </div>
+                            <div class="item-product d-flex"><img src="./images/danhdu.png" alt="cây">
+                              <div class="item-info"><span>cây chân chim</span><img src="./images/star.png" alt="star">
+                                <p>280.000đ</p>
+                              </div>
+                            </div>
+                            <div class="item-product d-flex"><img src="./images/cota.png" alt="cây">
+                              <div class="item-info"><span>Cây Đa Búp Đỏ</span><img src="./images/star.png" alt="star">
+                                <p>290.000đ</p>
+                              </div>
+                            </div>
+                            <div class="item-product d-flex"><img src="./images/dalam.png" alt="cây">
+                              <div class="item-info"><span>Cây Danh Dự</span><img src="./images/star.png" alt="star">
+                                <p>210.000đ</p>
+                              </div>
+                            </div>
+            </div>
+            <div class="product--sale-content">
+                      <div class="product position-relative">
+                        <figure><img src="./images/cota.png" alt="hoa"></figure>
+                        <div class="content">
+                          <p>Cây Cọ Ta</p><img src="./images/star.png" alt="star">
+                          <div class="price">
+                            <div class="price--new">153.000đ</div>
+                            <div class="price--old">250.000đ</div>
+                          </div>
+                        </div>
+                        <div class="sales bg-percent">-25%</div>
+                      </div>
+                      <div class="product position-relative">
+                        <figure><img src="./images/duanho.png" alt="hoa"></figure>
+                        <div class="content">
+                          <p>Cây Dứa Nhỏ</p><img src="./images/star.png" alt="star">
+                          <div class="price">
+                            <div class="price--new">120.000đ</div>
+                            <div class="price--old">250.000đ</div>
+                          </div>
+                        </div>
+                        <div class="sales bg-percent">-10%</div>
+                      </div>
+                      <div class="product position-relative">
+                        <figure><img src="./images/danhdu.png" alt="hoa"></figure>
+                        <div class="content">
+                          <p>Cây Danh Dự</p><img src="./images/star.png" alt="star">
+                          <div class="price">
+                            <div class="price--new">190.000đ</div>
+                            <div class="price--old">250.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product position-relative">
+                        <figure><img src="./images/dalam.png" alt="hoa"></figure>
+                        <div class="content">
+                          <p>Cây Dạ Lam</p><img src="./images/star.png" alt="star">
+                          <div class="price">
+                            <div class="price--new">120.000đ</div>
+                            <div class="price--old">250.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product position-relative">
+                        <figure><img src="./images/duanho.png" alt="hoa"></figure>
+                        <div class="content">
+                          <p>Cây Danh Dự</p><img src="./images/star.png" alt="star">
+                          <div class="price">
+                            <div class="price--new">178.000đ</div>
+                            <div class="price--old">250.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product position-relative">
+                        <figure><img src="./images/cota.png" alt="hoa"></figure>
+                        <div class="content">
+                          <p>Cây Cọ Ta</p><img src="./images/star.png" alt="star">
+                          <div class="price">
+                            <div class="price--new">151.000đ</div>
+                            <div class="price--old">250.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-3">
+          <div class="wrap-dalat"><img src="./images/dalat.png" alt="sương rồng đà lạt"></div>
+        </div>
+        <div class="section-4">
+                  <div class="title d-flex justify-content-between align-items-center"><span class="text-capitalize">sản phẩm mới</span>
+                    <div class="arrow d-flex">
+                      <div class="arrow-left"></div>
+                      <div class="arrow-right"></div>
                     </div>
                   </div>
-                </div>
-                <div class="product position-relative">
-                  <figure><img src="../images/dalam.png" alt="hoa"></figure>
-                  <div class="content">
-                    <p>Cây Hồng Môn</p><img src="../images/star.png" alt="star">
-                    <div class="price">
-                      <div class="price--new">250.000 đ</div>
-                      <div class="price--old">250.000 đ</div>
+          <div class="product-news">
+                    <div class="product position-relative">
+                      <figure><img src="./images/cota.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Cọ Ta</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">153.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
+                      <div class="sales">new</div>
                     </div>
-                  </div>
-                </div>
-                <div class="product position-relative">
-                  <figure><img src="../images/caychanchim.png" alt="hoa"></figure>
-                  <div class="content">
-                    <p>Cây Phát Lộc</p><img src="../images/star.png" alt="star">
-                    <div class="price">
-                      <div class="price--new">250.000 đ</div>
-                      <div class="price--old">250.000 đ</div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/dalam.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Dạ Lam</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">123.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="product position-relative">
-                  <figure><img src="../images/danhdu.png" alt="hoa"></figure>
-                  <div class="content">
-                    <p>Cây Kim Ngân</p><img src="../images/star.png" alt="star">
-                    <div class="price">
-                      <div class="price--new">250.000 đ</div>
-                      <div class="price--old">250.000 đ</div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/duanho.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Dứa Nhỏ</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">157.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
                     </div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/danhdu.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Danh Dự</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">110.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/dalam.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Dạ Lam</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">170.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/cota.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Cọ Ta</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">193.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/duanho.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Dứa Nhỏ</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">340.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product position-relative">
+                      <figure><img src="./images/danhdu.png" alt="hoa"></figure>
+                      <div class="content">
+                        <p>Cây Danh Dự</p><img src="./images/star.png" alt="star">
+                        <div class="price">
+                          <div class="price--new">103.000đ</div>
+                          <div class="price--old">250.000đ</div>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+        <div class="section-5">
+                  <div class="title d-flex justify-content-between align-items-center"><span class="text-capitalize">tin tức</span>
                   </div>
-                </div>
-      </div>
+          <div class="wrap-new">
+                      <div class="new"><img class="w-100" src="./images/new3.png" alt="ảnh"><i>Thứ 7, ngày 31, tháng 12, năm 2019</i><a href="#">
+                          <h4>15 thiết kế phòng ngủ vạn người mê</h4></a>
+                        <p>Cùng Sài Gòn Hoa tìm hiểu vài xu hướng thiết kế  sân vườn được ưa chuộng hiện nay nhé ! kết hợp hàng rào</p><span class="font-italic">Đọc tiếp    </span>
+                      </div>
+                      <div class="new"><img class="w-100" src="./images/new2.png" alt="ảnh"><i>Thứ 2, ngày 31, tháng 3, năm 2014</i><a href="#">
+                          <h4>15 thiết kế phòng ngủ vạn người mê</h4></a>
+                        <p>Cùng Sài Gòn Hoa tìm hiểu vài xu hướng thiết kế  sân vườn được ưa chuộng hiện nay nhé ! kết hợp hàng rào</p><span class="font-italic">Đọc tiếp    </span>
+                      </div>
+                      <div class="new"><img class="w-100" src="./images/new4.png" alt="ảnh"><i>Thứ 5, ngày 31, tháng 5, năm 2012</i><a href="#">
+                          <h4>15 thiết kế phòng ngủ vạn người mê</h4></a>
+                        <p>Cùng Sài Gòn Hoa tìm hiểu vài xu hướng thiết kế  sân vườn được ưa chuộng hiện nay nhé ! kết hợp hàng rào</p><span class="font-italic">Đọc tiếp    </span>
+                      </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <div id="wrap-popup">
+      <div class="position-relative d-flex" id="popup"><img src="./images/flowers.png" alt="hoa popup">
+        <div class="recieve-email"><img src="./images/recieve-email.png " alt="nhận email">
+          <h4 class="text-uppercase">đăng kí nhận email ngay hôm nay</h4>
+          <div class="input-search position-relative">
+            <input type="text" placeholder="Nhập email của bạn vào đây">
+            <figure class="position-absolute"><img src="../images/btn-footer.png" alt="button"></figure>
+          </div>
+          <p>Đăng kí email ngay hôm nay để nhận các thông tin về sự kiện và các chương trình giảm giá từ chúng tôi</p>
+          <input type="checkbox">
+          <label>Không hiển thị lại thông báo này nữa</label>
+        </div>
+        <div class="delete position-absolute">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer--top d-sm-flex align-items-center justify-content-between">
         <div class="footer--top-social"><span class="text-uppercase">kênh thông tin từ chúng tôi :</span>

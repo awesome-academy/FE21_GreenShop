@@ -1,8 +1,11 @@
 @import '../common/common';
 
 // style for main
-main {
+#cart {
     padding : 0 $paddingMain;
+}
+main {
+    
     margin-bottom: 161px;
     /*
     * tyle common for table

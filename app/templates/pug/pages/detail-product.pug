@@ -4,10 +4,10 @@ block title
     title Chi tiết sản phẩm
 
 block style 
-    link(rel="stylesheet" type="text/css",href='./css/detail-product.css') 
+    link(rel="stylesheet" type="text/css",href='../css/pages/detail-product.css') 
 
 block content
-    main 
+    main#detail-product
         include ../components/path.pug
         +path('Cây  dạ lam')
         .detail--info.d-flex
@@ -39,12 +39,12 @@ block content
                         img(src='../images/search.png' alt='search')
                     figure
                         img(src='../images/heart.png' alt='heart')    
-                .social-product.d-flex
+                .social-product
                     img(src='../images/like.png' alt='like')   
-                    .number-img 0
+                    .number-img.d-inline-block 0
                     img(src='../images/twitter1.png' alt='twitter1')   
                     img(src='../images/google.png' alt='google')   
-                    .number-img 0
+                    .number-img.d-inline-block 0
                     img(src='../images/share.png' alt='share')
         .detail-info2
             .nav.nav-tabs
@@ -77,7 +77,7 @@ block content
                     p   
                         | Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.
 
-                .tab-pane.fade.show.active#nav-detail3(aria-labelledby="nav-grid-tab")
+                .tab-pane.fade#nav-detail3(aria-labelledby="nav-grid-tab")
                     p   
                         |  Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.
                     p   
