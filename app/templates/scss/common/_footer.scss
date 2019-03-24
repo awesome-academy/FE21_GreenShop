@@ -103,6 +103,9 @@ footer {
                 transform: rotate(45deg);
             }
         }
+        ul {
+            margin: 0;
+        }
         a {
             color: $silverText;
             font-size: 0.8rem;
@@ -111,6 +114,7 @@ footer {
     
 }
 .footer--bottom {
+    
     &-more {
         li {
             margin-right: 23px;
@@ -125,7 +129,7 @@ footer {
         }
     }
     &-design {
-        background-color: $blackFooterBottom;
+        background-color: $blackFooterBottom;    
         padding: 14px 0; 
     }
 }

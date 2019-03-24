@@ -107,7 +107,7 @@ body {
     nav .menu-hidden > img {
       margin-left: 20px; }
   .footer--top {
-    padding: 35px 14px !important; }
+    padding: 30px 15px !important; }
     .footer--top-social span {
       color: #3fb871 !important;
       margin-bottom: 22px;
@@ -172,6 +172,8 @@ body {
 @media screen and (max-width: 768px) {
   main section {
     padding: 0 15px !important; }
+  #wrap-popup #popup > img {
+    display: none; }
   #cart,
   #detail-product,
   #new,
@@ -203,28 +205,38 @@ body {
     .write--comment .input-text input {
       width: 100%;
       margin-bottom: 16px; }
+  .product--highligh-content {
+    grid-template-columns: auto  !important; }
+  .product-news {
+    grid-template-columns: auto auto !important; }
   .product--buy-sale {
     grid-template-columns: auto !important; }
     .product--buy-sale .title:first-child {
       order: 1; }
+    .product--buy-sale .title:nth-child(2) {
+      order: 3; }
     .product--buy-sale .product--buy-content {
-      order: 3;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      order: 2;
+      display: grid;
+      grid-template-columns: auto auto;
       border: 0 !important; }
       .product--buy-sale .product--buy-content .item-product {
         padding: 0;
-        width: 32%;
+        height: auto;
+        border: 0 !important;
         margin-bottom: 10px; }
   .section-4 .product-news {
-    grid-template-columns: auto auto auto  !important; }
+    grid-template-columns: auto auto auto; }
   .content--contact {
     padding: 0 15px !important; }
-  footer .footer--top,
-  footer .footer--middle,
-  footer .footer--bottom {
-    padding: 0 15px !important; } }
+  .footer--top {
+    padding: 20px 15px !important; }
+    .footer--top-mail {
+      display: none; }
+  .footer--middle {
+    padding: 30px 15px !important; }
+  .footer--bottom-more {
+    padding: 31px 15px !important; } }
 
 footer .footer--top {
   padding: 34px 150px;
@@ -302,6 +314,8 @@ footer .footer--bottom-more {
       border-top: 1px solid #e1e1e1;
       border-right: 1px solid #e1e1e1;
       transform: rotate(45deg); }
+  .footer--middle-details .part-detail ul {
+    margin: 0; }
   .footer--middle-details .part-detail a {
     color: #e1e1e1;
     font-size: 0.8rem; }
