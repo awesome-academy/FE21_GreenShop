@@ -6,32 +6,32 @@ footer
                 - var listSocial = ['facebook','twitter','youtube','v']
                     each item in listSocial
                         a(href='#')
-                            img(src='./images/' + item + '.png')
+                            img(src='../images/' + item + '.png')
             .social-icon.d-block.d-sm-none
                 - var listSocial1 = ['face','twitter','ytb','v']
                     each item in listSocial1
                         a(href='#')
-                            img(src='./images/' + item + '-mobile.png')                
+                            img(src='../images/' + item + '-mobile.png')                
         .footer--top-mail
             h4.text-uppercase đăng kí nhận thông tin <br class='d-none d-sm-block'> từ chúng tôi
         .footer--top-search
             .input-search.position-relative
                 input(type='text')
                 figure.position-absolute
-                    img(src='./images/btn-footer.png',alt='button')
+                    img(src='../images/btn-footer.png',alt='button')
     hr
-    .footer--middle.d-sm-flex
+    .footer--middle.d-md-flex
         .footer--middle-info.mr-4
             figure.position-relative
-                img(src='./images/GreenShop.png' alt='greenshop')
+                img(src='../images/GreenShop.png' alt='greenshop')
                 span.position-absolute Món quà từ thiên nhiên
             p Green shop được thành lập từ 8/2010 được sự tin tưởng của  các khách hàng trong suốt thời gian hoạt 
                 | động đến nay cửa hàng ngày một phát triển
             .phone
-                img(src='./images/phone.png',alt='phone')    
+                img(src='../images/phone.png',alt='phone')    
                 span Điện thoại : (84-4) 66.558.868
             .email
-                img(src='./images/email.png',alt='email')    
+                img(src='../images/email.png',alt='email')    
                 span Email : info@dkt.com.vn
         .footer--middle-details.w-100.d-sm-flex.justify-content-between
             mixin part-details(title,...ct)
@@ -57,6 +57,6 @@ footer
             .img-pay
                 - var listImg = ['visa','map','paypal','osc']
                     each item in listImg
-                        img(src='./images/' + item + '.png' alt=item)                
+                        img(src='../images/' + item + '.png' alt=item)                
         .footer--bottom-design.text-center.text-white
             | Thiết kế bởi Bizweb＠

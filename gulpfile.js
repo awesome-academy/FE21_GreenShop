@@ -11,7 +11,7 @@ var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 
 gulp.task('pug',function() { 
-  return gulp.src('./app/templates/pug/pages/index.pug')  
+  return gulp.src('./app/templates/pug/**/*.pug')  
     .pipe(pug({
      pretty : true//dòng này để export ra file html như bình thường
     }))   
@@ -20,7 +20,7 @@ gulp.task('pug',function() {
 });
 
 gulp.task('sass',function() {
-  return gulp.src('./app/templates/scss/*.scss')
+  return gulp.src('./app/templates/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))  
     .pipe(gulp.dest('./app/built/css/'))
     .pipe(browserSync.stream());
@@ -37,7 +37,7 @@ gulp.task('serve', ['pug','sass','js'], function() {
 
   browserSync.init({
       server: {
-        baseDir: "./app/built"
+        baseDir: "./app/built/"
       },
       /*
       *  server sẽ run file trong pages,nhưng nếu các file khác không nàm trong pages nó sẽ không nhận các file đó

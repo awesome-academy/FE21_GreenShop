@@ -1,55 +1,9 @@
 @import './common/common.scss';
 
 // style page home
+
 main {
-    /*
-    * this is title on main 
-    */
-    .title {
-        margin-top: 44px;
-        margin-bottom: 29px;
-        border-bottom: 1px solid $silverTextLight;
-        span {
-            display: inline-block;
-            font-family: 'Roboto Slab', serif;
-            color: $green;
-            padding: 15px 0;
-            border-bottom: 2px solid $green;
-            font-weight: bold;
-        }
-        .arrow {
-            @mixin arr {
-                width:21px;
-                height: 21px;
-                border-radius: 50%;
-                border: 1px solid $silverText;
-                position: relative;
-                cursor: pointer;                    
-                &:after {
-                    width: 4px;
-                    height: 4px;
-                    content: '';
-                    position: absolute;
-                    top: 8px;
-                    left: 8px;
-                    border-top: 1px solid $silverText;
-                    border-right: 1px solid $silverText;
-                }
-            }
-            &-left {
-                @include arr;
-                transform: rotate(225deg);
-            }
-            &-right {
-                @include arr;
-                transform: rotate(45deg);
-                margin-left: 4px;
-            }
-        }
-    }
-    /*
-    * title on main
-    */
+    
     .item-product {
         height: calc(100% /6);
         display: flex;
@@ -219,5 +173,71 @@ main {
             }
         }
     }
+        
 }
-// style page home
+
+// style popup
+#wrap-popup {
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+    width: 70%;
+    z-index: 100;
+}
+#popup {
+    
+    background-color: $silverTextLight;
+    padding: 82px 45px 66px 20px;
+    .recieve-email {
+        h4 {
+            color: $green;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        .input-search {
+            margin-top: 33px;
+            height: 45px;
+            input {
+                padding-left: 15px;
+                
+            }
+        }   
+        input[type='text'] {
+            width: 100%;
+            height: 100%;
+            border:0;
+        }
+        figure {
+            right: 0;
+            top: 0;
+            padding: 0 16px;
+            height: 100%;
+            background-color: $green !important;
+            img {
+                margin-top: 100%;
+            }
+        }
+        p {
+            margin:17px 0 39px;
+        }
+    }
+    .delete {
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        div {
+            background-color: $green;
+            height: 2px;
+            width: 20px;
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform:translateY(-2px) rotate(135deg);
+            }
+        }
+    }
+}

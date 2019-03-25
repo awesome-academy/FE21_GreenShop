@@ -3,14 +3,15 @@
   <head>
     <title>Trang chủ | Home</title>
     <meta charset="utf-8">
+    <script type="text/javascript" src="./script/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <script src="./script/popup.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="./vendor/awesome/css/all.css" type="text/css">
-    <ink href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet"></ink>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <script type="text/javascript" src="./script/jquery.min.js"></script>
     <script type="text/javascript" src="./vendor/awesome/js/all.js"></script>
     <script type="text/javascript" src="../script/bootstrap.min.js"></script>
   </head>
@@ -26,7 +27,7 @@
               <figure><img src="images/v.png" alt="v"></figure></a>
           </div>
         </div>
-        <div class="header--top-right float-right"><a class="d-inline-block" href="#"><img src="./images/signin.png" alt="signin"><span>Đăng nhập</span></a><a class="d-inline-block" href="#"><img src="./images/signup.png" alt="signup"><span>Đăng kí</span></a></div>
+        <div class="header--top-right float-right"><a class="d-inline-block" href="./pages/signin.html"><img src="./images/signin.png" alt="signin"><span>Đăng nhập</span></a><a class="d-inline-block" href="./pages/signup.html"><img src="./images/signup.png" alt="signup"><span>Đăng kí</span></a></div>
       </div>
       <div class="header--content d-flex">
         <div class="header-mobile d-block d-sm-none"><img src="./images/GreenShop1.png" alt="gs-mobile"></div>
@@ -39,7 +40,7 @@
             <div class="search--input position-relative">
               <input class="w-100 border-0 d-block px-4" type="text" placeholder="Tìm kiếm..."><span></span><img class="position-absolute" src="./images/search.png" alt="Search">
             </div>
-          </div><img src="./images/cart.png" alt="giỏ hàng"><span>0 sản phẩm            </span>
+          </div><a href="./pages/cart.html"><img src="./images/cart.png" alt="giỏ hàng"></a><span>0 sản phẩm            </span>
         </div>
       </div>
     </header>
@@ -55,20 +56,19 @@
         </div><img class="d-inline-block" src="./images/cart-white.png" alt="cart-white">
       </div>
       <ul class="d-none d-sm-flex mb-0">
-        <li class="active"><a href="">trang chủ</a></li>
+        <li class="active"><a href="index.html">trang chủ</a></li>
         <li><a href="">giới thiệu</a></li>
-        <li> <a href="">sảm phẩm
+        <li> <a href="./pages/list-product.html">sảm phẩm
             <ul class="d-none">
-              <li>sản phẩm 1</li>
-              <li>sản phẩm 2</li>
+              <li> <a href="./pages/detail-product.html">Chi tiết sản phẩm</a></li>
             </ul></a></li>
         <li> <a href="">sản phẩm mới
             <ul class="d-none">
               <li>sản phẩm mới 1</li>
               <li>sản phẩm mới 2</li>
             </ul></a></li>
-        <li><a href="">tin tức</a></li>
-        <li><a href="">liên hệ                 </a></li>
+        <li><a href="./pages/news.html">tin tức</a></li>
+        <li><a href="./pages/contact.html">liên hệ                 </a></li>
       </ul>
     </nav>
     <main>
@@ -406,6 +406,24 @@
         </div>
       </section>
     </main>
+    <div id="wrap-popup">
+      <div class="position-relative d-flex" id="popup"><img src="./images/flowers.png" alt="hoa popup">
+        <div class="recieve-email"><img src="./images/recieve-email.png " alt="nhận email">
+          <h4 class="text-uppercase">đăng kí nhận email ngay hôm nay</h4>
+          <div class="input-search position-relative">
+            <input type="text" placeholder="Nhập email của bạn vào đây">
+            <figure class="position-absolute"><img src="../images/btn-footer.png" alt="button"></figure>
+          </div>
+          <p>Đăng kí email ngay hôm nay để nhận các thông tin về sự kiện và các chương trình giảm giá từ chúng tôi</p>
+          <input type="checkbox">
+          <label>Không hiển thị lại thông báo này nữa</label>
+        </div>
+        <div class="delete position-absolute">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer--top d-sm-flex align-items-center justify-content-between">
         <div class="footer--top-social"><span class="text-uppercase">kênh thông tin từ chúng tôi :</span>
@@ -425,7 +443,7 @@
         </div>
       </div>
       <hr>
-      <div class="footer--middle d-sm-flex">
+      <div class="footer--middle d-md-flex">
         <div class="footer--middle-info mr-4">
           <figure class="position-relative"><img src="./images/GreenShop.png" alt="greenshop"><span class="position-absolute">Món quà từ thiên nhiên</span></figure>
           <p>

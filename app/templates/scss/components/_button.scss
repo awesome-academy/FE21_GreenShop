@@ -8,5 +8,15 @@ button {
     &:hover {
         background-color:white;
         color: $green;
+        border: 1px solid $green;
+    }
+}
+.not-color {
+    background-color: transparent;
+    color: $green;
+    border: 1px solid $green;
+    &:hover {
+        background-color: $green;
+        color:white;
     }
 }
