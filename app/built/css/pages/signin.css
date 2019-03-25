@@ -167,13 +167,73 @@ body {
         section .product-news .product:first-child {
           display: block; }
     section .section-5 {
-      display: none; } }
+      display: none; }
+  .content--contact {
+    padding: 0 15px !important; }
+  .signin--content {
+    flex-direction: column-reverse; }
+    .signin--content > div {
+      width: 100% !important; }
+    .signin--content-question {
+      margin-left: 0 !important;
+      margin-bottom: 30px; }
+  .info--customer-content {
+    flex-direction: column; }
+    .info--customer-content .left,
+    .info--customer-content .right {
+      width: 100% !important; }
+    .info--customer-content .right {
+      margin-left: 0 !important; }
+  .path {
+    padding: 0 15px !important; }
+  .content--contact-input {
+    width: 100% !important; }
+  .content--contact-info {
+    display: none; }
+  .new {
+    flex-direction: column-reverse; }
+    .new section {
+      width: 100% !important; }
+    .new aside {
+      width: 100% !important; }
+  #list-product aside {
+    width: 100%; }
+  #list-product section {
+    padding: 0 !important;
+    flex-direction: column-reverse; }
+    #list-product section article {
+      width: 100%; }
+    #list-product section .pagination {
+      margin: 50px 0 0; }
+      #list-product section .pagination li:nth-child(2),
+      #list-product section .pagination li:nth-child(3),
+      #list-product section .pagination li:nth-child(4),
+      #list-product section .pagination li:nth-child(5) {
+        display: none; }
+  .grid-content > div {
+    flex-direction: column; }
+  #detail-product .detail--info {
+    flex-direction: column; }
+    #detail-product .detail--info .galary {
+      margin-right: 0; }
+      #detail-product .detail--info .galary .wrap--galary-item {
+        justify-content: space-between; }
+    #detail-product .detail--info-content {
+      margin-top: 20px; }
+  #detail-product .product--relate {
+    grid-template-columns: auto auto; }
+  .cart tr td:first-child {
+    display: none; }
+  .total-pay td {
+    padding: 25px !important; } }
 
 @media screen and (max-width: 768px) {
   main section {
     padding: 0 15px !important; }
   #wrap-popup #popup > img {
     display: none; }
+  #signin,
+  #signup,
   #cart,
   #detail-product,
   #new,
@@ -227,12 +287,14 @@ body {
         margin-bottom: 10px; }
   .section-4 .product-news {
     grid-template-columns: auto auto auto; }
-  .content--contact {
-    padding: 0 15px !important; }
   .footer--top {
     padding: 20px 15px !important; }
     .footer--top-mail {
       display: none; }
+  .new aside {
+    width: 190px; }
+  .new section {
+    width: calc(100% - 223px); }
   .footer--middle {
     padding: 30px 15px !important; }
   .footer--bottom-more {
